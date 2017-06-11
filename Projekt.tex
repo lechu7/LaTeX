@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{amsmath}
+\usepackage{tikz}
 
 \title{Wielościany}
 \author{Damian Lechański i Rafał Motyka}
@@ -139,23 +140,14 @@ Pole powierzchni kuli można obliczyć ze wzoru \ref{eqn.kulaPole}, a objętoś�
 \begin{figure}[h]
 \centering
 \setlength{\unitlength}{1cm}
-\begin{picture}(4,4)(0,0)
-\qbezier(0,2)(0.1,2.4)(2,2.5)
-\qbezier(4,2)(3.9,2.4)(2,2.5)
-\qbezier(0,2)(0.1,1.6)(2,1.5)
-\qbezier(4,2)(3.9,1.6)(2,1.5)
-
-\qbezier(0,2)(0.59,3.41)(2,4)
-\qbezier(0,2)(0.59,0.59)(2,0)
-
-\qbezier(4,2)(3.41,3.41)(2,4)
-\qbezier(4,2)(3.41,0.59)(2,0)
-\put(2,2){\circle{5}}
-
-\put(0,2){\line(1,0){2}}
-
-\put(0.7,2.1){$r$}
-\end{picture}
+\begin{tikzpicture}
+  \shade[ball color = white!40, opacity = 0] (0,0) circle (2cm);
+  \draw (0,0) circle (2cm);
+  \draw (-2,0) arc (180:360:2 and 0.6);
+  \draw[dashed] (2,0) arc (0:180:2 and 0.6);
+  \fill[fill=black] (0,0) circle (1pt);
+  \draw[dashed] (0,0 ) -- node[above]{$r$} (2,0);
+\end{tikzpicture}
 \caption{\label{fig:kula}Kula}
 \end{figure}
 

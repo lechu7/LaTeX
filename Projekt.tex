@@ -1,7 +1,14 @@
 \documentclass{article}
+
+
 \usepackage[utf8]{inputenc}
+\usepackage[russian,polish]{babel}
 \usepackage{polski}
-\selecthyphenation{polish}
+
+
+
+
+
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{amsmath}
@@ -36,7 +43,7 @@ Wielokąt możemy również określić używając pojęcia \textbf{zamkniętej p
 \section{Siatka wielościanu}
 \textbf{Siatka wielościanu} jest to rozwinięcie powierzchni danego wielościanu na płaszczyźnie, po "rozcięciu" wielościanu wzdłuż odpowiednich krawędzi. Dany wielościan może mieć kilka różnych siatek. Siatki stosujemy, gdy chcemy wykonać model wielościanu.
 
-\section{Elementy wielocianów foremnych}
+\section{Elementy wielościanów foremnych}
 \begin{table}[h]
 \centering
 \begin{tabular}{||l|c|c|c||}
@@ -160,6 +167,25 @@ Pole powierzchni kuli można obliczyć ze wzoru \ref{eqn.kulaPole}, a objętoś�
 \label{eqn.kulaObjetosc}
 \mathrm{V}=\frac{4}{3}\pi r^3
 \end{equation} 
+
+\section{Nazwy wielościanów w różnych językach}
+\begin{table}[h]
+\centering
+\begin{tabular}{||l|c|c|c||}
+\hline\hline
+Nazwa Polska & Angielska & Niemiecka & Rosyjska\\ \hline
+czworościan & tetrahedron & Tetraeders  & \selectlanguage{russian} тетраэдр\\
+sześcian & cube & Würfel & \selectlanguage{russian} куб \\
+ośmiościan & octahedron & Oktaeder & \selectlanguage{russian} октаэдр \\
+dwunastościan & dodecahedron & Dodekaeder & \selectlanguage{russian} додекаэдр \\
+dwudziestościan & icosahedron & Ikosaeder & \selectlanguage{russian} икосаэдр \\
+\hline\hline
+\end{tabular}
+\selectlanguage{polish}
+\caption[Nazwy wielościanów]{\label{tab.elementyWieloscianow}Nazwy wielościanów}
+
+\end{table}
+
 
 \newpage
 \listoftables

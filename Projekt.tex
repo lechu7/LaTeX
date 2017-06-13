@@ -7,12 +7,11 @@
 
 
 
-
-
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{tikz}
+\usepackage{makeidx}
 
 \title{Wielościany}
 \author{Damian Lechański i Rafał Motyka}
@@ -23,7 +22,7 @@
 \maketitle
 
 \abstract{
-\textbf{Wielościan} - bryła geometryczna, ograniczona przez tak zwaną powierzchnię wielościenną, czyli powierzchnię utworzoną z wielokątów o rozłącznych wnętrzach i każdym boku wspólnym dla dwóch wielokątów.
+\textbf{Wielościan}\index{Wielościan}- bryła geometryczna, ograniczona przez tak zwaną powierzchnię wielościenną, czyli powierzchnię utworzoną z wielokątów o rozłącznych wnętrzach i każdym boku wspólnym dla dwóch wielokątów.
 \newline
 \textbf{Wielościan} to figura geometryczna, która:
 \begin{itemize}
@@ -61,7 +60,7 @@ dwudziestościan & 20 trójkątów & 30 & 12 \\
 
 \section{Przykładowe wielościany}
 \subsection{\href{https://pl.wikipedia.org/wiki/Sze\%C5\%9Bcian_(geometria)}{Sześcian}}
-Sześcian \ref{fig:szescian} jest bryłą, którą tworzy sześć jednakowych kwadratów, więc ma 12 równych krawędzi. Przekątne ściany są tej samej długości na wszystkich ścianach. Przekątne bryły – złącze wierzchołków, które nie leżą na jednej ścianie – są również tej samej długości.
+Sześcian \index{Szescian}\ref{fig:szescian} jest bryłą, którą tworzy sześć jednakowych kwadratów, więc ma 12 równych krawędzi. Przekątne ściany są tej samej długości na wszystkich ścianach. Przekątne bryły – złącze wierzchołków, które nie leżą na jednej ścianie – są również tej samej długości.
 \newline
 Pole powierzchni sześcianu można obliczyć ze wzoru \ref{eqn.szescianPole}, a objętość \ref{eqn.szescianObjetosc}.
 \begin{figure}[h]
@@ -102,7 +101,7 @@ Pole powierzchni sześcianu można obliczyć ze wzoru \ref{eqn.szescianPole}, a 
 
 \newpage
 \subsection{\href{https://pl.wikipedia.org/wiki/Walec_(bry\%C5\%82a)}{Walec}}
-Walec \ref{fig:walec} jest bryłą składającą się z dwóch równoległych podstaw i płaszczu. Płaszcz jest prostopadły do podstawy, a podstawa jest utworzona przez koło.
+Walec \ref{fig:walec}\index{Walec} jest bryłą składającą się z dwóch równoległych podstaw i płaszczu. Płaszcz jest prostopadły do podstawy, a podstawa jest utworzona przez koło.
 \newline
 Pole powierzchni walca można obliczyć ze wzoru \ref{eqn.walecPole}, a objętość \ref{eqn.walecObjetosc}.
 \begin{figure}[h]
@@ -141,7 +140,7 @@ Pole powierzchni walca można obliczyć ze wzoru \ref{eqn.walecPole}, a objęto�
 
 \newpage
 \subsection{\href{https://pl.wikipedia.org/wiki/Kula)}{Kula}}
-Kula \ref{fig:kula} jest określona promieniem lub średnicą, jest zbiorem punktów, które są odległe od środka maksymalnie długością równą promieniowi.
+Kula \ref{fig:kula}\index{Kula}jest określona promieniem lub średnicą, jest zbiorem punktów, które są odległe od środka maksymalnie długością równą promieniowi.
 \newline
 Pole powierzchni kuli można obliczyć ze wzoru \ref{eqn.kulaPole}, a objętość \ref{eqn.kulaObjetosc}.
 \begin{figure}[h]
@@ -186,8 +185,23 @@ dwudziestościan & icosahedron & Ikosaeder & \selectlanguage{russian} икоса
 
 \end{table}
 
-
+\selectlanguage{polish}
 \newpage
 \listoftables
 \listoffigures
+
+\printindex
+
+
+\begin{thebibliography}{9}
+
+\bibitem{Kraina}
+  W krainie wielościanów. Zrób sobie bryłkę, Piotr Pawlikowski  (2015). Pozyskano z: \url{http://www.matematyka.wroc.pl/ksiazki/w-krainie-wielo\%C5\%9Bcian\%C3\%B3w.-zr\%C3\%B3b-sobie-bry\%C5\%82k\%C4\%99.}
+
+\bibitem{Wiki}
+Wikipedia, Wielościan (2001-) \url{https://pl.wikipedia.org/wiki/Wielo\%C5\%9Bcian}
+	
+
+
+\end{thebibliography}
 \end{document}
